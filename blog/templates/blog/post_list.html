@@ -16,24 +16,18 @@
 	</div>
 	
 	<div>
-		<h2><a href="">About the Project</a></h2>
-		<p>Learn more about the project here!</p>
-	</div>
-	
-	<div>
-		<h2><a href="">Get Involved!</a></h2>
-		<p>Learn more about how you can get involved in the project's development!</p>
-	</div>
 
-	<div>
-		<h2><a href="">View Prototype</a></h2>
-		<p>See what the content of the app will look like here</p>
-	</div>
-
-	<div>
-		<h2><a href="">Give Us Your Feedback</a></h2>
-		<p>Fill in our survey to help inform the apps development!</p>
+	{% for post in posts %}
+		<div>
+			<p>published: {{ post.published_date }}</p>
+			<h2><a href="">{{ post.title }}</a></h2>
+			<p>{{ post.text|linebreaksbr }}</p>
+		</div>
+	{% endfor %}
 
 	
 </body>
 </html>
+
+
+
