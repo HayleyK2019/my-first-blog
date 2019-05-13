@@ -16,8 +16,8 @@
 }
 
 h1, h2, h3, h4 {
-    color: #4d1454;
-    font-family: 'Lobster'
+    color: #ffffff;
+    font-family: 'Stylish'
 }
 
 .date {
@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #4d1454;
+    color: #ffffff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
