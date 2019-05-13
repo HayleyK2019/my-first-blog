@@ -16,7 +16,8 @@
 }
 
 h1, h2, h3, h4 {
-    color: #ffffff;
+    color: #4d1454;
+		
     font-family: 'Stylish'
 }
 
@@ -40,7 +41,16 @@ h1, h2, h3, h4 {
 }
 
 .post, .post h1, .post h1 a, .post h1 a:visited{
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     color: #4d1454;
 }
 
+.sub-title h2, .sub-title h3{
+background-color: #4d1454;
+color: #ffffff
+}
+
+.new-post h2{
+	color: #4d1454
+	
+}
