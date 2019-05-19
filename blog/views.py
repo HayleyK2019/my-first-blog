@@ -4,6 +4,7 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm, CommentForm
 from django.shortcuts import redirect
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -55,3 +56,10 @@ def add_comment_to_post(request, pk):
     else:
         form = CommentForm()
     return render(request, 'blog/add_comment_to_post.html', {'form': form})
+
+def contact(request):
+    form_class = ContactForm
+
+    return render(request, 'blog/contact.html', {
+        'form': form_class,
+    })
