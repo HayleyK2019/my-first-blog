@@ -41,6 +41,14 @@ h1, h2, h3, h4 {
     margin-right: 20px;
 }
 
+.top-menu2, .top-menu2:hover, .top-menu2:visited {
+	color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: -30px;
+	margin-top: 30px
+}
+
 .post, .post h1, .post h1 a, .post h1 a:visited{
     margin-bottom: 30px;
     color: #4d1454;
