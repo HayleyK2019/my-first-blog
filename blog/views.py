@@ -7,6 +7,7 @@ from django.shortcuts import redirect
 from .forms import ContactForm
 from django.core.mail import EmailMessage
 from django.template.loader import get_template
+from django.core.mail import send_mail
 
 # Create your views here.
 
@@ -84,14 +85,8 @@ def contact(request):
             }
             content = template.render(context)
 
-            email = EmailMessage(
-                "New contact form submission",
-                content,
-                "Your website" +'',
-                ['youremail@gmail.com'],
-                headers = {'Reply-To': contact_email }
-            )
-            email.send()
+            send_mail("New contact form submission",
+            content, contact_email, ['hayleykinnear93@gmail.com'], fail_silently=False)
             return redirect('contact')
 
     return render(request, 'blog/contact.html', {
