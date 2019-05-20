@@ -121,9 +121,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
-EMAIL_PORT = 1025
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'hayleykinnear93@gmail.com'
+ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Contact Email from EWE4You'
+EMAIL_HOST_USER = 'EWE4You'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_PASSWORD = 'Psychology2019'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+SENDGRID_API_KEY = "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"
+SENDGRID_SANDBOX_MODE_IN_DEBUG = True
+
