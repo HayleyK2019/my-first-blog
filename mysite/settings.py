@@ -25,7 +25,7 @@ SECRET_KEY = 'n%_0ahe=(!+1w%p2d0tm32g^6vmm%-228yfw0efr_@7f1%)l28'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com', 'smtp.sendgrid.net']
 
 
 # Application definition
@@ -129,6 +129,6 @@ EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_PASSWORD = 'Psychology2019'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-SENDGRID_API_KEY = "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"
+SENDGRID_API_KEY = ""
 SENDGRID_SANDBOX_MODE_IN_DEBUG = True
 
