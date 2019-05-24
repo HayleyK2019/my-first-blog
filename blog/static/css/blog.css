@@ -18,8 +18,8 @@
 
 h1, h2, h3, h4 {
     color: #4d1454;
-		
     font-family: 'Stylish'
+
 }
 
 .date {
@@ -50,8 +50,18 @@ h1, h2, h3, h4 {
 }
 
 .post, .post h1, .post h1 a, .post h1 a:visited{
-    margin-bottom: 30px;
+	margin-right: 50px;
+	margin-top: 30px;
+	margin-left: 15px;
     color: #4d1454;
+}
+
+.post{
+	border-color: purple;
+	border-width: 5px;
+	border-style: dotted;
+	border-radius: 10px;
+	
 }
 
 .sub-title h2, .sub-title h3{
@@ -66,4 +76,15 @@ color: #ffffff
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+.date {
+	margin-right: 50px;
+	margin-top: 15px;
+	margin-left: 30px;
+    color: #4d1454; 
+}
+
+.btn btn-default {
+color: #ffffff
 }
